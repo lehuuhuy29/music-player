@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mucsic Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./asset/css/main.css">
+  </head>
+  <body>
+    <div class="player">
+      <div class="dashboard">
+        <!-- CD -->
+        <div class="cd">
+          <div
+            class="cd-thumb"
+            style="
+              background-image: url('https://i1.sndcdn.com/artworks-000515620938-obv8q2-t500x500.jpg');
+            "
+          ></div>
+        </div>
+
+        <!-- Body -->
+        <div class="body-music">
+          <div class="info-music">
+            <h2 class="title-music">Anh nhà ở đâu thế?</h2>
+            <p class="author-music">AMEE</p>
+          </div>
+          <i class="fas fa-heart heart-music"></i>
+        </div>
+
+        <!-- control -->
+        <div class="control">
+          <div class="btn btn-repeat">
+            <i class="fas fa-redo-alt"></i>
+          </div>
+          <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+          </div>
+          <div class="btn btn-toggle-play">
+            <i class="fas fa-pause icon-pause"></i>
+            <i class="fas fa-play icon-play"></i>
+          </div>
+          <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </div>
+          <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+          </div>
+        </div>
+
+        <input type="range"name="progress" id="progress"class="progress" value="0" step="1" min="0" max="100"/>
+
+        <audio id="audio" src=""></audio>
+      </div>
+
+
+      <div class="playlist">
+
+      </div>
+    </div>
+
+
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>
